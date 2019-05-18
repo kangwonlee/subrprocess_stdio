@@ -15,8 +15,6 @@ def main(argv):
         encoding='utf-8',
     )
 
-    first_output = p.stdout.read(1)
-    print(f"first_output = {repr(first_output)}")
 
     stdout, stderr = p.communicate(input='a\nb\n')
 
