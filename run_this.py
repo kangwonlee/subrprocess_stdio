@@ -16,7 +16,7 @@ def main(argv):
     )
 
     first_output = p.stdout.read(1)
-    print(first_output)
+    print(f"first_output = {repr(first_output)}")
 
     stdout, stderr = p.communicate(input='a\nb\n')
 
